@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{%block title%}
+{{title}}
+{%endblock%}
+{% block content %}
+<img src="/static/img/hat.png" alt="Одежда">
+{% for j in clothes %}
+<p>Перед нами <b>{{j.name}}</b>, стоимостью в <i>{{j.price}}</i></p>
+{% endfor %}
+{% endblock %}
